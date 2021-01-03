@@ -12,6 +12,8 @@
 
 #ifndef SPLIT_STR_H
 # define SPLIT_STR_H
+# include <stdlib.h>
+# include <stdint.h>
 
 typedef struct		s_arr_strings
 {
@@ -24,7 +26,6 @@ typedef struct		s_split_str
 	char			*current;
 	char			*after_protecting;
 	char			separator;
-	uint8_t			new_word_flag;
 }					t_split_str;
 
 /*

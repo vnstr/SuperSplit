@@ -12,9 +12,8 @@
 
 #include <stdio.h>
 #include <unistd.h>
-
 #include <stdbool.h>
-#include "mutant_split.h"
+
 #include "split_str.h"
 
 size_t		copy_strings(t_arr_strings *strings, t_split_str s)

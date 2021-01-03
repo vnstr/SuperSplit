@@ -31,7 +31,7 @@ static void		free_strings(t_arr_strings *strings)
 	free(begin);
 }
 
-char			**mutant_split(const char *s, char c)
+char			**super_split(const char *s, char c)
 {
 	t_arr_strings	strings;
 	t_split_str		str;

@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MUTANT_SPLIT_H
-# define MUTANT_SPLIT_H
+#ifndef SUPER_SPLIT_H
+# define SUPER_SPLIT_H
 
 # include <stdint.h>
 # include <stdlib.h>
 
-char		**mutant_split(const char *s, char c);
+char		**super_split(const char *s, char c);
 
 #endif
