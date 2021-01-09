@@ -34,6 +34,11 @@ void	print_and_free_strs(char **strs)
 	free(begin);
 }
 
+int			is_semicolon(int c)
+{
+	return (c == ';');
+}
+
 int			main(void)
 {
 	/*
@@ -57,37 +62,37 @@ int			main(void)
 	char	*s7 = ";1234567;456789;7891;";
 
 	printf("input: |%s|\n", s1);
-	res = super_split(s1, c);
+	res = super_split(s1, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s2);
-	res = super_split(s2, c);
+	res = super_split(s2, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s3);
-	res = super_split(s3, c);
+	res = super_split(s3, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s4);
-	res = super_split(s4, c);
+	res = super_split(s4, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s5);
-	res = super_split(s5, c);
+	res = super_split(s5, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s6);
-	res = super_split(s6, c);
+	res = super_split(s6, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s7);
-	res = super_split(s7, c);
+	res = super_split(s7, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
@@ -104,37 +109,37 @@ int			main(void)
 	char	*s14 = ";;;;1234;;;;456789;7891234567;;;;";
 
 	printf("input: |%s|\n", s8);
-	res = super_split(s8, c);
+	res = super_split(s8, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s9);
-	res = super_split(s9, c);
+	res = super_split(s9, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s10);
-	res = super_split(s10, c);
+	res = super_split(s10, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s11);
-	res = super_split(s11, c);
+	res = super_split(s11, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s12);
-	res = super_split(s12, c);
+	res = super_split(s12, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s13);
-	res = super_split(s13, c);
+	res = super_split(s13, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s14);
-	res = super_split(s14, c);
+	res = super_split(s14, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
@@ -151,37 +156,37 @@ int			main(void)
 	s7 = ";123;45\\\"6;789;"; //3;
 
 	printf("input: |%s|\n", s1);
-	res = super_split(s1, c);
+	res = super_split(s1, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s2);
-	res = super_split(s2, c);
+	res = super_split(s2, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s3);
-	res = super_split(s3, c);
+	res = super_split(s3, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s4);
-	res = super_split(s4, c);
+	res = super_split(s4, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s5);
-	res = super_split(s5, c);
+	res = super_split(s5, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s6);
-	res = super_split(s6, c);
+	res = super_split(s6, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s7);
-	res = super_split(s7, c);
+	res = super_split(s7, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
@@ -198,37 +203,37 @@ int			main(void)
 	s14 = "\\'123;\'456;\';768\\;1";
 
 	printf("input: |%s|\n", s8);
-	res = super_split(s8, c);
+	res = super_split(s8, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s9);
-	res = super_split(s9, c);
+	res = super_split(s9, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s10);
-	res = super_split(s10, c);
+	res = super_split(s10, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s11);
-	res = super_split(s11, c);
+	res = super_split(s11, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s12);
-	res = super_split(s12, c);
+	res = super_split(s12, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s13);
-	res = super_split(s13, c);
+	res = super_split(s13, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
 	printf("input: |%s|\n", s14);
-	res = super_split(s14, c);
+	res = super_split(s14, is_semicolon);
 	print_and_free_strs(res);
 	printf("\n");
 
